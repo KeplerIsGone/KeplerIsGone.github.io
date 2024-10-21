@@ -30,10 +30,10 @@ find "$ROOT_DIR" -type f -name "*.md" | while read -r FILE; do
     # Front matter 작성
     FRONT_MATTER="---
 layout: post
-title: [Algorithm] $TITLE
+title: \"[] $TITLE\"
 date: $DATE
-category: Study
-tags: Algorithm
+category: Draft
+tags:
 ---"
 
     # 기존 파일의 맨 앞에 front matter 추가 (임시 파일을 사용하지 않고 직접 수정)

@@ -17,9 +17,6 @@ find "$ROOT_DIR" -type f -name "*.md" | while read -r FILE; do
         continue
     fi
 
-    # 파일 제목에서 '-'를 띄어쓰기로 변경 (필요에 따라 생략 가능)
-    TITLE=$(echo "$FILE_NAME" | tr '-' ' ')
-
     # 새로운 파일 이름 설정: <date>-<원래제목>.md
     NEW_FILE="$(dirname "$FILE")/$DATE-$FILE_NAME.md"
 
