@@ -31,7 +31,6 @@ github_username: keplerisgone
 
 # Build settings
 remote-theme: no-style-please
-theme: no-style-please
 
 plugins:
   - jekyll-feed
